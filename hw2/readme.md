@@ -20,7 +20,7 @@
 
 ### 1.2 服务器端设计逻辑
 
-![](pic.png)
+![](img/pic.png)
 
 服务器端程序共包含4个主要的类分别是`Receiver`类、`Worker`类、`Process`类和`Sender`类，以及一个用于计数的`TransactionCounter`类
 
@@ -46,7 +46,7 @@
 
 分析`Receiver`类和`Worker`类核心代码
 
-![](c.png)
+![](img/code.png)
 
 若程序执行顺序如情形1所示，则语句2执行结果正确；若程序执行顺序如情形2所示，则语句2执行结果错误。
 
