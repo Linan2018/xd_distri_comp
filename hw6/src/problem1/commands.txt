@@ -1,0 +1,23 @@
+setcp
+javac Problem1.java -encoding utf-8
+jar cvf mrtest.jar *.class
+hadoop fs -mkdir /input1
+hadoop fs -put ./input_file_1.txt /input1
+hadoop jar ./mrtest.jar Problem1 /input1 /output1
+hadoop fs -ls /output1
+hadoop fs -cat /output1/part-r-00000 
+hadoop fs -cat /output1/part-r-00000 >output1.txt 2>&1
+# hadoop fs -rm -r /output1
+chcp 65001
+
+setcp
+javac Problem1_.java -encoding utf-8
+jar cvf mrtest.jar *.class
+hadoop fs -mkdir /input1
+hadoop fs -put ./input_file_1.txt /input1
+hadoop jar ./mrtest.jar Problem1_ /input1 /output1_
+hadoop fs -ls /output1_
+hadoop fs -cat /output1_/part-r-00000 
+hadoop fs -cat /output1_/part-r-00000 >output1_.txt 2>&1
+# hadoop fs -rm -r /output1_
+chcp 65001

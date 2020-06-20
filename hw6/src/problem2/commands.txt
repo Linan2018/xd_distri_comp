@@ -1,0 +1,10 @@
+setcp
+javac Problem2.java
+jar cvf mrtest.jar *.class
+hadoop fs -mkdir /input2
+hadoop fs -put ./input_file2.txt /input2
+hadoop jar ./mrtest.jar Problem2 /input2 /output2
+hadoop fs -ls /output2
+hadoop fs -cat /output2/part-r-00000
+# hadoop fs -rm -r /output2
+chcp 65001
