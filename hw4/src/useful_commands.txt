@@ -1,0 +1,4 @@
+wsimport -keep -p wsproxy http://www.webxml.com.cn/WebServices/IpAddressSearchWebService.asmx?wsdl
+
+javac .\wsclient\*.java
+java wsclient.CodeInfoClient [需要查询的ip地址]
