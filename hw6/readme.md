@@ -91,7 +91,7 @@ d,e
 
 可表示为
 
-![image-20200603143808823](C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20200603143808823.png)
+![image-20200603143808823](https://github.com/Linan2018/xd_distri_comp/blob/master/hw6/img/image-20200603143808823.png)
 
 可以发现祖孙关系有
 
@@ -118,13 +118,13 @@ context.write(new Text(split[1]), new Text("+" + split[0]));
 
 
 
-![image-20200603144747462](C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20200603144747462.png)
+![image-20200603144747462](https://github.com/Linan2018/xd_distri_comp/blob/master/hw6/img/image-20200603144747462.png)
 
 #### Combine阶段
 
 使用默认的聚合方法
 
-![image-20200603145131053](C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20200603145131053.png)
+![image-20200603145131053](https://github.com/Linan2018/xd_distri_comp/blob/master/hw6/img/image-20200603145131053.png)
 
 #### Reduce阶段
 
@@ -151,7 +151,7 @@ for (int i = 0; i < grandchild.size(); i++) {
 }
 ```
 
-![image-20200603145610086](C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20200603145610086.png)
+![image-20200603145610086](https://github.com/Linan2018/xd_distri_comp/blob/master/hw6/img/image-20200603145610086.png)
 
 ## 运行方式
 
