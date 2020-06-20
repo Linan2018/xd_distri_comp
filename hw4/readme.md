@@ -13,5 +13,5 @@ java wsclient.CodeInfoClient [需要查询的ip地址]
 
 执行结果
 
-![](pic.png)
+![](https://github.com/Linan2018/xd_distri_comp/blob/master/hw4/img/pic.png)
 
