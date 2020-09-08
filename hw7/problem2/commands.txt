@@ -1,0 +1,10 @@
+hadoop fs -mkdir /input2
+hadoop fs -put ./input_file2.txt /input2
+
+spark-submit p2.py
+hadoop fs -ls /resultspark2
+hadoop fs -cat /resultspark2/part-00000 
+hadoop fs -cat /resultspark2/part-00000 >output2.txt 2>&1
+
+# hadoop fs -rm -r /resultspark2
+chcp 65001

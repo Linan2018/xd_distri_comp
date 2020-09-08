@@ -1,0 +1,16 @@
+hadoop fs -mkdir /input1
+hadoop fs -put ./input_file_1.txt /input1 
+
+spark-submit p1_1.py
+hadoop fs -ls /resultspark1_1
+hadoop fs -cat /resultspark1_1/part-00000 
+hadoop fs -cat /resultspark1_1/part-00000 >output1_1.txt 2>&1
+# hadoop fs -rm -r /resultspark1_1
+chcp 65001
+
+spark-submit p1_2.py
+hadoop fs -ls /resultspark1_2
+hadoop fs -cat /resultspark1_2/part-00000 
+hadoop fs -cat /resultspark1_2/part-00000 >output1_2.txt 2>&1
+# hadoop fs -rm -r /resultspark1_2
+chcp 65001
